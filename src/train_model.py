@@ -47,6 +47,6 @@ pipeline = Pipeline([
 pipeline.fit(X,y)
 
 # Save the model to a file
-joblib.dump("model/sentiment_model.pkl")
+joblib.dump(pipeline, "model/sentiment_model.pkl")
 
 print("Model trained and saved as 'model/sentiment_model.pkl")
